@@ -3,7 +3,7 @@
   "displayName": "Claude Code AI cost / usage tracker",
   "description": "Capture and track Claude Code AI usage costs across projects and branches. Access the data easily in VSCode sidebar.",
   "publisher": "CodeMaman",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "icon": "assets/avatar.png",
   "repository": {
     "type": "git",
