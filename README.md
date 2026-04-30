@@ -5,13 +5,13 @@ Track your Claude Code AI costs in real-time directly in VSCode. Monitor daily a
 ## Screenshots
 
 ### Sidebar — Cost Overview
-![Cost Overview Sidebar](assets/claude-code-cost-tracker-side-bar.png)
+![Cost Overview Sidebar](https://raw.githubusercontent.com/hmredmond/vscode-extension-claude-code-ai-tracker/main/assets/claude-code-cost-tracker-side-bar.png)
 
 ### Reports Panel
-![Reports Panel](assets/claude-code-cost-tracker-reports.png)
+![Reports Panel](https://raw.githubusercontent.com/hmredmond/vscode-extension-claude-code-ai-tracker/main/assets/claude-code-cost-tracker-reports.png)
 
 ### Console Report
-![Console Report](assets/claude-code-cost-tracker-console.png)
+![Console Report](https://raw.githubusercontent.com/hmredmond/vscode-extension-claude-code-ai-tracker/main/assets/claude-code-cost-tracker-console.png)
 
 ## Features
 
