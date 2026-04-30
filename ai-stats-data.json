@@ -1,0 +1,2944 @@
+{
+  "generated_at": "2026-03-17T12:56:53.665Z",
+  "totals": {
+    "input": 252158,
+    "output": 112922,
+    "cacheRead": 542342618,
+    "cacheWrite": 33752448,
+    "cost": 108.26895470000004,
+    "count": 6863
+  },
+  "hourly": {
+    "2026-03-17T09": {
+      "input": 36,
+      "output": 12,
+      "cacheRead": 105001,
+      "cacheWrite": 42562,
+      "cost": 0.06379860000000001,
+      "count": 4
+    },
+    "2026-03-16T20": {
+      "input": 1004,
+      "output": 3828,
+      "cacheRead": 2733291,
+      "cacheWrite": 290689,
+      "cost": 0.6568343499999999,
+      "count": 48
+    },
+    "2026-03-16T19": {
+      "input": 7742,
+      "output": 3254,
+      "cacheRead": 1449377,
+      "cacheWrite": 120919,
+      "cost": 0.3200984500000001,
+      "count": 34
+    },
+    "2026-03-16T21": {
+      "input": 18,
+      "output": 6,
+      "cacheRead": 60820,
+      "cacheWrite": 64824,
+      "cost": 0.08715999999999999,
+      "count": 2
+    },
+    "2026-03-17T10": {
+      "input": 256,
+      "output": 93,
+      "cacheRead": 1768020,
+      "cacheWrite": 147103,
+      "cost": 0.36140175,
+      "count": 31
+    },
+    "2026-03-16T14": {
+      "input": 135,
+      "output": 53,
+      "cacheRead": 955261,
+      "cacheWrite": 212473,
+      "cost": 0.36151735,
+      "count": 17
+    },
+    "2026-03-16T15": {
+      "input": 94,
+      "output": 23,
+      "cacheRead": 550453,
+      "cacheWrite": 18048,
+      "cost": 0.0778143,
+      "count": 11
+    }
+  },
+  "daily": {
+    "2026-02-11": {
+      "input": 3275,
+      "output": 1096,
+      "cacheRead": 32102614,
+      "cacheWrite": 1563174,
+      "cost": 5.172983899999998,
+      "count": 436
+    },
+    "2026-03-05": {
+      "input": 3301,
+      "output": 3819,
+      "cacheRead": 29023154,
+      "cacheWrite": 1808780,
+      "cost": 5.185686400000002,
+      "count": 358
+    },
+    "2026-03-04": {
+      "input": 1155,
+      "output": 363,
+      "cacheRead": 10830799,
+      "cacheWrite": 636706,
+      "cost": 1.8819324000000013,
+      "count": 138
+    },
+    "2026-03-12": {
+      "input": 1772,
+      "output": 5951,
+      "cacheRead": 18315144,
+      "cacheWrite": 1801221,
+      "cost": 4.699926250000002,
+      "count": 232
+    },
+    "2026-03-11": {
+      "input": 888,
+      "output": 271,
+      "cacheRead": 6740980,
+      "cacheWrite": 437426,
+      "cost": 1.2231235,
+      "count": 105
+    },
+    "2026-03-10": {
+      "input": 1068,
+      "output": 283,
+      "cacheRead": 9860237,
+      "cacheWrite": 923149,
+      "cost": 2.1424429500000004,
+      "count": 125
+    },
+    "2026-03-13": {
+      "input": 30,
+      "output": 12,
+      "cacheRead": 46924,
+      "cacheWrite": 31879,
+      "cost": 0.04463115000000001,
+      "count": 7
+    },
+    "2026-03-03": {
+      "input": 3396,
+      "output": 44480,
+      "cacheRead": 34235326,
+      "cacheWrite": 2578695,
+      "cost": 11.997981750000003,
+      "count": 440
+    },
+    "2026-02-25": {
+      "input": 13176,
+      "output": 3772,
+      "cacheRead": 43785414,
+      "cacheWrite": 1449774,
+      "cost": 6.615575299999998,
+      "count": 548
+    },
+    "2026-02-24": {
+      "input": 11475,
+      "output": 8250,
+      "cacheRead": 85662284,
+      "cacheWrite": 4151782,
+      "cost": 14.907556,
+      "count": 1037
+    },
+    "2026-02-26": {
+      "input": 16216,
+      "output": 1423,
+      "cacheRead": 60226114,
+      "cacheWrite": 3049119,
+      "cost": 10.48362685000001,
+      "count": 622
+    },
+    "2026-01-14": {
+      "input": 26456,
+      "output": 9578,
+      "cacheRead": 2495404,
+      "cacheWrite": 175440,
+      "cost": 1.4002846999999998,
+      "count": 43
+    },
+    "2026-01-15": {
+      "input": 4369,
+      "output": 1591,
+      "cacheRead": 212491,
+      "cacheWrite": 62745,
+      "cost": 0.11200435,
+      "count": 7
+    },
+    "2026-02-12": {
+      "input": 3575,
+      "output": 900,
+      "cacheRead": 36154079,
+      "cacheWrite": 2939304,
+      "cost": 7.297612900000005,
+      "count": 411
+    },
+    "2026-01-12": {
+      "input": 160,
+      "output": 5141,
+      "cacheRead": 300941,
+      "cacheWrite": 295995,
+      "cost": 1.00172605,
+      "count": 43
+    },
+    "2026-02-03": {
+      "input": 194,
+      "output": 69,
+      "cacheRead": 1396991,
+      "cacheWrite": 185803,
+      "cost": 0.37249185000000007,
+      "count": 34
+    },
+    "2026-03-09": {
+      "input": 4155,
+      "output": 1177,
+      "cacheRead": 43649907,
+      "cacheWrite": 3071233,
+      "cost": 8.214071950000003,
+      "count": 502
+    },
+    "2026-02-10": {
+      "input": 5920,
+      "output": 108,
+      "cacheRead": 1083156,
+      "cacheWrite": 133818,
+      "cost": 0.2820480999999999,
+      "count": 24
+    },
+    "2026-01-29": {
+      "input": 1599,
+      "output": 34,
+      "cacheRead": 314205,
+      "cacheWrite": 111256,
+      "cost": 0.1722595,
+      "count": 17
+    },
+    "2026-01-28": {
+      "input": 7245,
+      "output": 162,
+      "cacheRead": 2102321,
+      "cacheWrite": 235572,
+      "cost": 0.5127520999999997,
+      "count": 68
+    },
+    "2026-02-23": {
+      "input": 2946,
+      "output": 757,
+      "cacheRead": 31324340,
+      "cacheWrite": 1251328,
+      "cost": 4.703325000000004,
+      "count": 349
+    },
+    "2026-02-18": {
+      "input": 5279,
+      "output": 964,
+      "cacheRead": 40398707,
+      "cacheWrite": 1952417,
+      "cost": 7.077658350000005,
+      "count": 407
+    },
+    "2026-01-21": {
+      "input": 13376,
+      "output": 65,
+      "cacheRead": 452836,
+      "cacheWrite": 139079,
+      "cost": 0.23283335000000002,
+      "count": 18
+    },
+    "2026-01-19": {
+      "input": 3858,
+      "output": 54,
+      "cacheRead": 183179,
+      "cacheWrite": 39620,
+      "cost": 0.0719709,
+      "count": 8
+    },
+    "2026-02-05": {
+      "input": 12995,
+      "output": 4811,
+      "cacheRead": 5803495,
+      "cacheWrite": 679143,
+      "cost": 2.6450700499999984,
+      "count": 143
+    },
+    "2026-02-04": {
+      "input": 13204,
+      "output": 392,
+      "cacheRead": 4150871,
+      "cacheWrite": 306793,
+      "cost": 0.8137423500000002,
+      "count": 103
+    },
+    "2026-01-22": {
+      "input": 11465,
+      "output": 22,
+      "cacheRead": 406295,
+      "cacheWrite": 59692,
+      "cost": 0.1268195,
+      "count": 11
+    },
+    "2026-02-17": {
+      "input": 1900,
+      "output": 160,
+      "cacheRead": 2519510,
+      "cacheWrite": 252791,
+      "cost": 0.57063975,
+      "count": 59
+    },
+    "2026-03-17": {
+      "input": 292,
+      "output": 105,
+      "cacheRead": 1873021,
+      "cacheWrite": 189665,
+      "cost": 0.42520034999999995,
+      "count": 35
+    },
+    "2026-02-19": {
+      "input": 1656,
+      "output": 6056,
+      "cacheRead": 19561058,
+      "cacheWrite": 1377212,
+      "cost": 3.709556799999999,
+      "count": 196
+    },
+    "2026-03-02": {
+      "input": 577,
+      "output": 3411,
+      "cacheRead": 4623739,
+      "cacheWrite": 407239,
+      "cost": 0.98905465,
+      "count": 63
+    },
+    "2026-02-02": {
+      "input": 20,
+      "output": 2,
+      "cacheRead": 334479,
+      "cacheWrite": 3638,
+      "cost": 0.0380254,
+      "count": 2
+    },
+    "2026-01-27": {
+      "input": 7969,
+      "output": 37,
+      "cacheRead": 543253,
+      "cacheWrite": 76450,
+      "cost": 0.1580418,
+      "count": 21
+    },
+    "2026-02-09": {
+      "input": 57951,
+      "output": 355,
+      "cacheRead": 4486882,
+      "cacheWrite": 432293,
+      "cost": 1.0487804500000002,
+      "count": 109
+    },
+    "2026-03-16": {
+      "input": 9245,
+      "output": 7251,
+      "cacheRead": 7142468,
+      "cacheWrite": 942217,
+      "cost": 1.9375180499999995,
+      "count": 142
+    }
+  },
+  "weekly": {
+    "2026-W02": {
+      "input": 78634,
+      "output": 10153,
+      "cacheRead": 152439923,
+      "cacheWrite": 11333497,
+      "cost": 30.125621149999983,
+      "count": 1951
+    },
+    "2026-W01": {
+      "input": 34842,
+      "output": 57347,
+      "cacheRead": 90398854,
+      "cacheWrite": 6606797,
+      "cost": 23.923984849999997,
+      "count": 1281
+    },
+    "2026-W04": {
+      "input": 72512,
+      "output": 14343,
+      "cacheRead": 222040462,
+      "cacheWrite": 10140394,
+      "cost": 37.14170690000004,
+      "count": 2593
+    },
+    "2026-W03": {
+      "input": 49357,
+      "output": 30846,
+      "cacheRead": 74503600,
+      "cacheWrite": 5248482,
+      "cost": 16.234588400000003,
+      "count": 932
+    },
+    "2026-W05": {
+      "input": 16813,
+      "output": 233,
+      "cacheRead": 2959779,
+      "cacheWrite": 423278,
+      "cost": 0.8430534000000003,
+      "count": 106
+    }
+  },
+  "monthly": {
+    "2026-02": {
+      "input": 149782,
+      "output": 29115,
+      "cacheRead": 368989994,
+      "cacheWrite": 19728389,
+      "cost": 65.73869305000007,
+      "count": 4480
+    },
+    "2026-03": {
+      "input": 25879,
+      "output": 67123,
+      "cacheRead": 166341699,
+      "cacheWrite": 12828210,
+      "cost": 38.74156940000007,
+      "count": 2147
+    },
+    "2026-01": {
+      "input": 76497,
+      "output": 16684,
+      "cacheRead": 7010925,
+      "cacheWrite": 1195849,
+      "cost": 3.788692249999998,
+      "count": 236
+    }
+  },
+  "projects": {
+    "-Users-Hannah-Redmond-Documents-Code-Projects-internal-toolkit-saleshub": {
+      "models": {
+        "claude-haiku-4-5-20251001": {
+          "input": 6056,
+          "output": 4768,
+          "cacheRead": 59056110,
+          "cacheWrite": 2476915,
+          "cost": 9.031650749999999,
+          "count": 730
+        },
+        "<synthetic>": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": 0,
+          "count": 3
+        }
+      },
+      "skills": {},
+      "tools": {},
+      "hourly": {},
+      "daily": {
+        "2026-02-11": {
+          "input": 2457,
+          "output": 866,
+          "cacheRead": 25088547,
+          "cacheWrite": 810494,
+          "cost": 3.528759199999999,
+          "count": 341
+        },
+        "2026-03-05": {
+          "input": 2559,
+          "output": 3585,
+          "cacheRead": 23644781,
+          "cacheWrite": 1157690,
+          "cost": 3.8320746000000026,
+          "count": 268
+        },
+        "2026-03-04": {
+          "input": 1040,
+          "output": 317,
+          "cacheRead": 10322782,
+          "cacheWrite": 508731,
+          "cost": 1.670816950000001,
+          "count": 124
+        }
+      },
+      "weekly": {
+        "2026-W02": {
+          "input": 2457,
+          "output": 866,
+          "cacheRead": 25088547,
+          "cacheWrite": 810494,
+          "cost": 3.528759199999999,
+          "count": 341
+        },
+        "2026-W01": {
+          "input": 3599,
+          "output": 3902,
+          "cacheRead": 33967563,
+          "cacheWrite": 1666421,
+          "cost": 5.502891550000003,
+          "count": 392
+        }
+      },
+      "monthly": {
+        "2026-02": {
+          "input": 2457,
+          "output": 866,
+          "cacheRead": 25088547,
+          "cacheWrite": 810494,
+          "cost": 3.528759199999999,
+          "count": 341
+        },
+        "2026-03": {
+          "input": 3599,
+          "output": 3902,
+          "cacheRead": 33967563,
+          "cacheWrite": 1666421,
+          "cost": 5.502891550000003,
+          "count": 392
+        }
+      },
+      "total": {
+        "input": 6056,
+        "output": 4768,
+        "cacheRead": 59056110,
+        "cacheWrite": 2476915,
+        "cost": 9.031650749999999,
+        "count": 733
+      }
+    },
+    "-Users-Hannah-Redmond-Documents-Code-Projects-internal-toolkit-saleshub-reports": {
+      "models": {
+        "claude-haiku-4-5-20251001": {
+          "input": 192,
+          "output": 66,
+          "cacheRead": 963899,
+          "cacheWrite": 55316,
+          "cost": 0.16605689999999998,
+          "count": 23
+        }
+      },
+      "skills": {},
+      "tools": {},
+      "hourly": {},
+      "daily": {
+        "2026-03-12": {
+          "input": 192,
+          "output": 66,
+          "cacheRead": 963899,
+          "cacheWrite": 55316,
+          "cost": 0.16605689999999998,
+          "count": 23
+        }
+      },
+      "weekly": {
+        "2026-W02": {
+          "input": 192,
+          "output": 66,
+          "cacheRead": 963899,
+          "cacheWrite": 55316,
+          "cost": 0.16605689999999998,
+          "count": 23
+        }
+      },
+      "monthly": {
+        "2026-03": {
+          "input": 192,
+          "output": 66,
+          "cacheRead": 963899,
+          "cacheWrite": 55316,
+          "cost": 0.16605689999999998,
+          "count": 23
+        }
+      },
+      "total": {
+        "input": 192,
+        "output": 66,
+        "cacheRead": 963899,
+        "cacheWrite": 55316,
+        "cost": 0.16605689999999998,
+        "count": 23
+      }
+    },
+    "-Users-Hannah-Redmond-Documents-Code-Projects-internal-toolkit-saleshub-vscode-extension-auth0-token-generator": {
+      "models": {
+        "claude-haiku-4-5-20251001": {
+          "input": 1674,
+          "output": 456,
+          "cacheRead": 15408090,
+          "cacheWrite": 1136871,
+          "cost": 2.9658517499999992,
+          "count": 195
+        },
+        "<synthetic>": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": 0,
+          "count": 1
+        }
+      },
+      "skills": {},
+      "tools": {},
+      "hourly": {},
+      "daily": {
+        "2026-03-11": {
+          "input": 616,
+          "output": 181,
+          "cacheRead": 5547853,
+          "cacheWrite": 241299,
+          "cost": 0.85793005,
+          "count": 73
+        },
+        "2026-03-10": {
+          "input": 1058,
+          "output": 275,
+          "cacheRead": 9860237,
+          "cacheWrite": 895572,
+          "cost": 2.1079217000000003,
+          "count": 123
+        }
+      },
+      "weekly": {
+        "2026-W02": {
+          "input": 1674,
+          "output": 456,
+          "cacheRead": 15408090,
+          "cacheWrite": 1136871,
+          "cost": 2.9658517499999992,
+          "count": 196
+        }
+      },
+      "monthly": {
+        "2026-03": {
+          "input": 1674,
+          "output": 456,
+          "cacheRead": 15408090,
+          "cacheWrite": 1136871,
+          "cost": 2.9658517499999992,
+          "count": 196
+        }
+      },
+      "total": {
+        "input": 1674,
+        "output": 456,
+        "cacheRead": 15408090,
+        "cacheWrite": 1136871,
+        "cost": 2.9658517499999992,
+        "count": 196
+      }
+    },
+    "-Users-Hannah-Redmond-Documents-Code-Projects-internal-toolkit-saleshub-vscode-extension-claude-code-ai-tracker": {
+      "models": {
+        "claude-sonnet-4-6": {
+          "input": 24,
+          "output": 5441,
+          "cacheRead": 836403,
+          "cacheWrite": 145448,
+          "cost": 0.8780378999999999,
+          "count": 22
+        },
+        "claude-haiku-4-5-20251001": {
+          "input": 908,
+          "output": 274,
+          "cacheRead": 10482636,
+          "cacheWrite": 486066,
+          "cost": 1.6581240999999998,
+          "count": 109
+        },
+        "<synthetic>": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": 0,
+          "count": 4
+        }
+      },
+      "skills": {},
+      "tools": {},
+      "hourly": {},
+      "daily": {
+        "2026-03-12": {
+          "input": 902,
+          "output": 5703,
+          "cacheRead": 11272115,
+          "cacheWrite": 599635,
+          "cost": 2.491530850000001,
+          "count": 128
+        },
+        "2026-03-13": {
+          "input": 30,
+          "output": 12,
+          "cacheRead": 46924,
+          "cacheWrite": 31879,
+          "cost": 0.04463115000000001,
+          "count": 7
+        }
+      },
+      "weekly": {
+        "2026-W02": {
+          "input": 932,
+          "output": 5715,
+          "cacheRead": 11319039,
+          "cacheWrite": 631514,
+          "cost": 2.5361620000000014,
+          "count": 135
+        }
+      },
+      "monthly": {
+        "2026-03": {
+          "input": 932,
+          "output": 5715,
+          "cacheRead": 11319039,
+          "cacheWrite": 631514,
+          "cost": 2.5361620000000014,
+          "count": 135
+        }
+      },
+      "total": {
+        "input": 932,
+        "output": 5715,
+        "cacheRead": 11319039,
+        "cacheWrite": 631514,
+        "cost": 2.5361620000000014,
+        "count": 135
+      }
+    },
+    "-Users-Hannah-Redmond-Documents-Code-Projects-personal-vscode-extensions-ai-usage-cost-vscode-extension": {
+      "models": {
+        "claude-sonnet-4-6": {
+          "input": 9097,
+          "output": 37842,
+          "cacheRead": 15053237,
+          "cacheWrite": 1404659,
+          "cost": 10.378363349999997,
+          "count": 198
+        },
+        "<synthetic>": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": 0,
+          "count": 13
+        },
+        "claude-haiku-4-5-20251001": {
+          "input": 27002,
+          "output": 9272,
+          "cacheRead": 143147011,
+          "cacheWrite": 5743926,
+          "cost": 21.567970599999992,
+          "count": 1617
+        },
+        "claude-sonnet-4-5-20250929": {
+          "input": 873,
+          "output": 266,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": 0.006609,
+          "count": 1
+        }
+      },
+      "skills": {},
+      "tools": {},
+      "hourly": {},
+      "daily": {
+        "2026-03-03": {
+          "input": 1571,
+          "output": 40056,
+          "cacheRead": 26073902,
+          "cacheWrite": 1567304,
+          "cost": 9.893655600000004,
+          "count": 299
+        },
+        "2026-02-25": {
+          "input": 13174,
+          "output": 3771,
+          "cacheRead": 43785414,
+          "cacheWrite": 1428293,
+          "cost": 6.588717049999998,
+          "count": 547
+        },
+        "2026-02-24": {
+          "input": 8222,
+          "output": 2757,
+          "cacheRead": 53427691,
+          "cacheWrite": 2231304,
+          "cost": 8.932870499999995,
+          "count": 641
+        },
+        "2026-02-26": {
+          "input": 14005,
+          "output": 796,
+          "cacheRead": 34913241,
+          "cacheWrite": 1921684,
+          "cost": 6.5376997999999995,
+          "count": 342
+        }
+      },
+      "weekly": {
+        "2026-W01": {
+          "input": 1571,
+          "output": 40056,
+          "cacheRead": 26073902,
+          "cacheWrite": 1567304,
+          "cost": 9.893655600000004,
+          "count": 299
+        },
+        "2026-W04": {
+          "input": 35401,
+          "output": 7324,
+          "cacheRead": 132126346,
+          "cacheWrite": 5581281,
+          "cost": 22.05928735,
+          "count": 1530
+        }
+      },
+      "monthly": {
+        "2026-03": {
+          "input": 1571,
+          "output": 40056,
+          "cacheRead": 26073902,
+          "cacheWrite": 1567304,
+          "cost": 9.893655600000004,
+          "count": 299
+        },
+        "2026-02": {
+          "input": 35401,
+          "output": 7324,
+          "cacheRead": 132126346,
+          "cacheWrite": 5581281,
+          "cost": 22.05928735,
+          "count": 1530
+        }
+      },
+      "total": {
+        "input": 36972,
+        "output": 47380,
+        "cacheRead": 158200248,
+        "cacheWrite": 7148585,
+        "cost": 31.95294294999999,
+        "count": 1829
+      }
+    },
+    "-Users-Hannah-Redmond-Documents-Code-Projects-personal-vscode-extensions-visual-regression-testing-extension": {
+      "models": {
+        "claude-haiku-4-5-20251001": {
+          "input": 13133,
+          "output": 3225,
+          "cacheRead": 336006,
+          "cacheWrite": 116784,
+          "cost": 0.20883860000000004,
+          "count": 13
+        }
+      },
+      "skills": {},
+      "tools": {},
+      "hourly": {},
+      "daily": {
+        "2026-01-14": {
+          "input": 8764,
+          "output": 1634,
+          "cacheRead": 123515,
+          "cacheWrite": 54039,
+          "cost": 0.09683425,
+          "count": 6
+        },
+        "2026-01-15": {
+          "input": 4369,
+          "output": 1591,
+          "cacheRead": 212491,
+          "cacheWrite": 62745,
+          "cost": 0.11200435,
+          "count": 7
+        }
+      },
+      "weekly": {
+        "2026-W03": {
+          "input": 13133,
+          "output": 3225,
+          "cacheRead": 336006,
+          "cacheWrite": 116784,
+          "cost": 0.20883860000000004,
+          "count": 13
+        }
+      },
+      "monthly": {
+        "2026-01": {
+          "input": 13133,
+          "output": 3225,
+          "cacheRead": 336006,
+          "cacheWrite": 116784,
+          "cost": 0.20883860000000004,
+          "count": 13
+        }
+      },
+      "total": {
+        "input": 13133,
+        "output": 3225,
+        "cacheRead": 336006,
+        "cacheWrite": 116784,
+        "cost": 0.20883860000000004,
+        "count": 13
+      }
+    },
+    "-Users-Hannah-Redmond-Documents-Code-Projects-saleshub": {
+      "models": {
+        "claude-haiku-4-5-20251001": {
+          "input": 168217,
+          "output": 37535,
+          "cacheRead": 291485939,
+          "cacheWrite": 21299943,
+          "cost": 56.12941465000022,
+          "count": 3764
+        },
+        "claude-sonnet-4-5-20250929": {
+          "input": 24982,
+          "output": 13777,
+          "cacheRead": 5573287,
+          "cacheWrite": 886520,
+          "cost": 5.2780371,
+          "count": 158
+        },
+        "<synthetic>": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": 0,
+          "count": 12
+        }
+      },
+      "skills": {},
+      "tools": {},
+      "hourly": {
+        "2026-03-17T09": {
+          "input": 36,
+          "output": 12,
+          "cacheRead": 105001,
+          "cacheWrite": 42562,
+          "cost": 0.06379860000000001,
+          "count": 4
+        },
+        "2026-03-16T20": {
+          "input": 1004,
+          "output": 3828,
+          "cacheRead": 2733291,
+          "cacheWrite": 290689,
+          "cost": 0.6568343499999999,
+          "count": 48
+        },
+        "2026-03-16T19": {
+          "input": 7742,
+          "output": 3254,
+          "cacheRead": 1449377,
+          "cacheWrite": 120919,
+          "cost": 0.3200984500000001,
+          "count": 34
+        },
+        "2026-03-16T21": {
+          "input": 18,
+          "output": 6,
+          "cacheRead": 60820,
+          "cacheWrite": 64824,
+          "cost": 0.08715999999999999,
+          "count": 2
+        },
+        "2026-03-17T10": {
+          "input": 256,
+          "output": 93,
+          "cacheRead": 1768020,
+          "cacheWrite": 147103,
+          "cost": 0.36140175,
+          "count": 31
+        },
+        "2026-03-16T14": {
+          "input": 135,
+          "output": 53,
+          "cacheRead": 955261,
+          "cacheWrite": 212473,
+          "cost": 0.36151735,
+          "count": 17
+        },
+        "2026-03-16T15": {
+          "input": 94,
+          "output": 23,
+          "cacheRead": 550453,
+          "cacheWrite": 18048,
+          "cost": 0.0778143,
+          "count": 11
+        }
+      },
+      "daily": {
+        "2026-02-12": {
+          "input": 3575,
+          "output": 900,
+          "cacheRead": 36154079,
+          "cacheWrite": 2939304,
+          "cost": 7.297612900000005,
+          "count": 411
+        },
+        "2026-02-11": {
+          "input": 818,
+          "output": 230,
+          "cacheRead": 7014067,
+          "cacheWrite": 752680,
+          "cost": 1.6442247000000003,
+          "count": 95
+        },
+        "2026-02-24": {
+          "input": 3253,
+          "output": 5493,
+          "cacheRead": 32234593,
+          "cacheWrite": 1920478,
+          "cost": 5.974685499999997,
+          "count": 396
+        },
+        "2026-01-12": {
+          "input": 160,
+          "output": 5141,
+          "cacheRead": 300941,
+          "cacheWrite": 295995,
+          "cost": 1.00172605,
+          "count": 43
+        },
+        "2026-02-03": {
+          "input": 194,
+          "output": 69,
+          "cacheRead": 1396991,
+          "cacheWrite": 185803,
+          "cost": 0.37249185000000007,
+          "count": 34
+        },
+        "2026-02-26": {
+          "input": 2211,
+          "output": 627,
+          "cacheRead": 25312873,
+          "cacheWrite": 1127435,
+          "cost": 3.94592705,
+          "count": 280
+        },
+        "2026-03-09": {
+          "input": 4155,
+          "output": 1177,
+          "cacheRead": 43649907,
+          "cacheWrite": 3071233,
+          "cost": 8.214071950000003,
+          "count": 502
+        },
+        "2026-03-03": {
+          "input": 1825,
+          "output": 4424,
+          "cacheRead": 8161424,
+          "cacheWrite": 1011391,
+          "cost": 2.104326150000001,
+          "count": 141
+        },
+        "2026-02-10": {
+          "input": 5920,
+          "output": 108,
+          "cacheRead": 1083156,
+          "cacheWrite": 133818,
+          "cost": 0.2820480999999999,
+          "count": 24
+        },
+        "2026-03-10": {
+          "input": 10,
+          "output": 8,
+          "cacheRead": 0,
+          "cacheWrite": 27577,
+          "cost": 0.03452125,
+          "count": 2
+        },
+        "2026-01-29": {
+          "input": 1599,
+          "output": 34,
+          "cacheRead": 314205,
+          "cacheWrite": 111256,
+          "cost": 0.1722595,
+          "count": 17
+        },
+        "2026-01-28": {
+          "input": 7245,
+          "output": 162,
+          "cacheRead": 2102321,
+          "cacheWrite": 235572,
+          "cost": 0.5127520999999997,
+          "count": 68
+        },
+        "2026-02-23": {
+          "input": 2946,
+          "output": 757,
+          "cacheRead": 31324340,
+          "cacheWrite": 1251328,
+          "cost": 4.703325000000004,
+          "count": 349
+        },
+        "2026-02-18": {
+          "input": 5279,
+          "output": 964,
+          "cacheRead": 40398707,
+          "cacheWrite": 1952417,
+          "cost": 7.077658350000005,
+          "count": 407
+        },
+        "2026-01-21": {
+          "input": 13376,
+          "output": 65,
+          "cacheRead": 452836,
+          "cacheWrite": 139079,
+          "cost": 0.23283335000000002,
+          "count": 18
+        },
+        "2026-01-19": {
+          "input": 3858,
+          "output": 54,
+          "cacheRead": 183179,
+          "cacheWrite": 39620,
+          "cost": 0.0719709,
+          "count": 8
+        },
+        "2026-03-12": {
+          "input": 678,
+          "output": 182,
+          "cacheRead": 6079130,
+          "cacheWrite": 1146270,
+          "cost": 2.0423384999999996,
+          "count": 81
+        },
+        "2026-02-05": {
+          "input": 12995,
+          "output": 4811,
+          "cacheRead": 5803495,
+          "cacheWrite": 679143,
+          "cost": 2.6450700499999984,
+          "count": 143
+        },
+        "2026-02-04": {
+          "input": 13204,
+          "output": 392,
+          "cacheRead": 4150871,
+          "cacheWrite": 306793,
+          "cost": 0.8137423500000002,
+          "count": 103
+        },
+        "2026-03-04": {
+          "input": 115,
+          "output": 46,
+          "cacheRead": 508017,
+          "cacheWrite": 127975,
+          "cost": 0.21111544999999998,
+          "count": 14
+        },
+        "2026-03-05": {
+          "input": 742,
+          "output": 234,
+          "cacheRead": 5378373,
+          "cacheWrite": 651090,
+          "cost": 1.3536117999999995,
+          "count": 90
+        },
+        "2026-03-11": {
+          "input": 272,
+          "output": 90,
+          "cacheRead": 1193127,
+          "cacheWrite": 196127,
+          "cost": 0.3651934499999999,
+          "count": 32
+        },
+        "2026-01-22": {
+          "input": 11465,
+          "output": 22,
+          "cacheRead": 406295,
+          "cacheWrite": 59692,
+          "cost": 0.1268195,
+          "count": 11
+        },
+        "2026-02-17": {
+          "input": 1900,
+          "output": 160,
+          "cacheRead": 2519510,
+          "cacheWrite": 252791,
+          "cost": 0.57063975,
+          "count": 59
+        },
+        "2026-03-17": {
+          "input": 292,
+          "output": 105,
+          "cacheRead": 1873021,
+          "cacheWrite": 189665,
+          "cost": 0.42520034999999995,
+          "count": 35
+        },
+        "2026-02-19": {
+          "input": 1656,
+          "output": 6056,
+          "cacheRead": 19561058,
+          "cacheWrite": 1377212,
+          "cost": 3.709556799999999,
+          "count": 196
+        },
+        "2026-03-02": {
+          "input": 577,
+          "output": 3411,
+          "cacheRead": 4623739,
+          "cacheWrite": 407239,
+          "cost": 0.98905465,
+          "count": 63
+        },
+        "2026-02-25": {
+          "input": 2,
+          "output": 1,
+          "cacheRead": 0,
+          "cacheWrite": 21481,
+          "cost": 0.02685825,
+          "count": 1
+        },
+        "2026-02-02": {
+          "input": 20,
+          "output": 2,
+          "cacheRead": 334479,
+          "cacheWrite": 3638,
+          "cost": 0.0380254,
+          "count": 2
+        },
+        "2026-01-27": {
+          "input": 7969,
+          "output": 37,
+          "cacheRead": 543253,
+          "cacheWrite": 76450,
+          "cost": 0.1580418,
+          "count": 21
+        },
+        "2026-02-09": {
+          "input": 57951,
+          "output": 355,
+          "cacheRead": 4486882,
+          "cacheWrite": 432293,
+          "cost": 1.0487804500000002,
+          "count": 109
+        },
+        "2026-03-16": {
+          "input": 9245,
+          "output": 7251,
+          "cacheRead": 7142468,
+          "cacheWrite": 942217,
+          "cost": 1.9375180499999995,
+          "count": 142
+        },
+        "2026-01-14": {
+          "input": 17692,
+          "output": 7944,
+          "cacheRead": 2371889,
+          "cacheWrite": 121401,
+          "cost": 1.30345045,
+          "count": 37
+        }
+      },
+      "weekly": {
+        "2026-W02": {
+          "input": 73379,
+          "output": 3050,
+          "cacheRead": 99660348,
+          "cacheWrite": 8699302,
+          "cost": 20.92879129999997,
+          "count": 1256
+        },
+        "2026-W04": {
+          "input": 37111,
+          "output": 7019,
+          "cacheRead": 89914116,
+          "cacheWrite": 4559113,
+          "cost": 15.082419549999997,
+          "count": 1063
+        },
+        "2026-W03": {
+          "input": 36224,
+          "output": 27621,
+          "cacheRead": 74167594,
+          "cacheWrite": 5131698,
+          "cost": 16.025749800000003,
+          "count": 919
+        },
+        "2026-W01": {
+          "input": 29672,
+          "output": 13389,
+          "cacheRead": 30357389,
+          "cacheWrite": 3373072,
+          "cost": 8.527437699999998,
+          "count": 590
+        },
+        "2026-W05": {
+          "input": 16813,
+          "output": 233,
+          "cacheRead": 2959779,
+          "cacheWrite": 423278,
+          "cost": 0.8430534000000003,
+          "count": 106
+        }
+      },
+      "monthly": {
+        "2026-02": {
+          "input": 111924,
+          "output": 20925,
+          "cacheRead": 211775101,
+          "cacheWrite": 13336614,
+          "cost": 40.15064650000008,
+          "count": 2609
+        },
+        "2026-01": {
+          "input": 63364,
+          "output": 13459,
+          "cacheRead": 6674919,
+          "cacheWrite": 1079065,
+          "cost": 3.579853649999998,
+          "count": 223
+        },
+        "2026-03": {
+          "input": 17911,
+          "output": 16928,
+          "cacheRead": 78609206,
+          "cacheWrite": 7770784,
+          "cost": 17.676951600000006,
+          "count": 1102
+        }
+      },
+      "total": {
+        "input": 193199,
+        "output": 51312,
+        "cacheRead": 297059226,
+        "cacheWrite": 22186463,
+        "cost": 61.40745175000023,
+        "count": 3934
+      }
+    }
+  },
+  "skills": [
+    {
+      "name": "review-pr",
+      "usageCount": 33,
+      "lastUsedAt": 1773670487409
+    },
+    {
+      "name": "review-code",
+      "usageCount": 19,
+      "lastUsedAt": 1773670490964
+    },
+    {
+      "name": "check-masking",
+      "usageCount": 18,
+      "lastUsedAt": 1770286060556
+    },
+    {
+      "name": "sync-translations-fr-ca",
+      "usageCount": 12,
+      "lastUsedAt": 1770314543647
+    },
+    {
+      "name": "new-project",
+      "usageCount": 6,
+      "lastUsedAt": 1770816195461
+    },
+    {
+      "name": "insights",
+      "usageCount": 6,
+      "lastUsedAt": 1773349283584
+    },
+    {
+      "name": "write-pr",
+      "usageCount": 2,
+      "lastUsedAt": 1771418075547
+    },
+    {
+      "name": "simplify",
+      "usageCount": 2,
+      "lastUsedAt": 1773047013048
+    },
+    {
+      "name": "update-site-map",
+      "usageCount": 1,
+      "lastUsedAt": 1772552942577
+    }
+  ],
+  "tools": [
+    {
+      "name": "Edit",
+      "usageCount": 485,
+      "lastUsedAt": 1772118174540
+    },
+    {
+      "name": "Read",
+      "usageCount": 445,
+      "lastUsedAt": 1772460236923
+    },
+    {
+      "name": "Bash",
+      "usageCount": 429,
+      "lastUsedAt": 1772118613631
+    },
+    {
+      "name": "Grep",
+      "usageCount": 70,
+      "lastUsedAt": 1772115591647
+    },
+    {
+      "name": "Write",
+      "usageCount": 36,
+      "lastUsedAt": 1772114149607
+    },
+    {
+      "name": "Glob",
+      "usageCount": 20,
+      "lastUsedAt": 1772111542405
+    },
+    {
+      "name": "TodoWrite",
+      "usageCount": 18,
+      "lastUsedAt": 1772106664201
+    },
+    {
+      "name": "Task",
+      "usageCount": 6,
+      "lastUsedAt": 1772104946204
+    },
+    {
+      "name": "TaskOutput",
+      "usageCount": 6,
+      "lastUsedAt": 1772116298456
+    },
+    {
+      "name": "EnterPlanMode",
+      "usageCount": 4,
+      "lastUsedAt": 1772104843989
+    },
+    {
+      "name": "AskUserQuestion",
+      "usageCount": 4,
+      "lastUsedAt": 1772105002347
+    },
+    {
+      "name": "ExitPlanMode",
+      "usageCount": 4,
+      "lastUsedAt": 1772105464549
+    },
+    {
+      "name": "Skill",
+      "usageCount": 4,
+      "lastUsedAt": 1772111527026
+    },
+    {
+      "name": "TaskStop",
+      "usageCount": 2,
+      "lastUsedAt": 1772115914189
+    }
+  ],
+  "dashboard": {
+    "generated_at": "2026-03-17T12:56:53.665Z",
+    "kpi": {
+      "total_cost": 108.26895470000004,
+      "actual_plan_cost": 0,
+      "total_sessions": 6863,
+      "total_messages": 0,
+      "total_output_tokens": 112922,
+      "total_input_tokens": 252158,
+      "first_session": "2026-01-12",
+      "last_session": "2026-03-17",
+      "total_projects": 7
+    },
+    "daily_costs": [
+      {
+        "date": "2026-01-12",
+        "total": 1.00172605
+      },
+      {
+        "date": "2026-01-14",
+        "total": 1.4002846999999998
+      },
+      {
+        "date": "2026-01-15",
+        "total": 0.11200435
+      },
+      {
+        "date": "2026-01-19",
+        "total": 0.0719709
+      },
+      {
+        "date": "2026-01-21",
+        "total": 0.23283335000000002
+      },
+      {
+        "date": "2026-01-22",
+        "total": 0.1268195
+      },
+      {
+        "date": "2026-01-27",
+        "total": 0.1580418
+      },
+      {
+        "date": "2026-01-28",
+        "total": 0.5127520999999997
+      },
+      {
+        "date": "2026-01-29",
+        "total": 0.1722595
+      },
+      {
+        "date": "2026-02-02",
+        "total": 0.0380254
+      },
+      {
+        "date": "2026-02-03",
+        "total": 0.37249185000000007
+      },
+      {
+        "date": "2026-02-04",
+        "total": 0.8137423500000002
+      },
+      {
+        "date": "2026-02-05",
+        "total": 2.6450700499999984
+      },
+      {
+        "date": "2026-02-09",
+        "total": 1.0487804500000002
+      },
+      {
+        "date": "2026-02-10",
+        "total": 0.2820480999999999
+      },
+      {
+        "date": "2026-02-11",
+        "total": 5.172983899999998
+      },
+      {
+        "date": "2026-02-12",
+        "total": 7.297612900000005
+      },
+      {
+        "date": "2026-02-17",
+        "total": 0.57063975
+      },
+      {
+        "date": "2026-02-18",
+        "total": 7.077658350000005
+      },
+      {
+        "date": "2026-02-19",
+        "total": 3.709556799999999
+      },
+      {
+        "date": "2026-02-23",
+        "total": 4.703325000000004
+      },
+      {
+        "date": "2026-02-24",
+        "total": 14.907556
+      },
+      {
+        "date": "2026-02-25",
+        "total": 6.615575299999998
+      },
+      {
+        "date": "2026-02-26",
+        "total": 10.48362685000001
+      },
+      {
+        "date": "2026-03-02",
+        "total": 0.98905465
+      },
+      {
+        "date": "2026-03-03",
+        "total": 11.997981750000003
+      },
+      {
+        "date": "2026-03-04",
+        "total": 1.8819324000000013
+      },
+      {
+        "date": "2026-03-05",
+        "total": 5.185686400000002
+      },
+      {
+        "date": "2026-03-09",
+        "total": 8.214071950000003
+      },
+      {
+        "date": "2026-03-10",
+        "total": 2.1424429500000004
+      },
+      {
+        "date": "2026-03-11",
+        "total": 1.2231235
+      },
+      {
+        "date": "2026-03-12",
+        "total": 4.699926250000002
+      },
+      {
+        "date": "2026-03-13",
+        "total": 0.04463115000000001
+      },
+      {
+        "date": "2026-03-16",
+        "total": 1.9375180499999995
+      },
+      {
+        "date": "2026-03-17",
+        "total": 0.42520034999999995
+      }
+    ],
+    "cumulative_costs": [
+      {
+        "date": "2026-01-12",
+        "cost": 1.00172605
+      },
+      {
+        "date": "2026-01-14",
+        "cost": 2.4020107499999996
+      },
+      {
+        "date": "2026-01-15",
+        "cost": 2.5140150999999995
+      },
+      {
+        "date": "2026-01-19",
+        "cost": 2.5859859999999997
+      },
+      {
+        "date": "2026-01-21",
+        "cost": 2.8188193499999996
+      },
+      {
+        "date": "2026-01-22",
+        "cost": 2.9456388499999995
+      },
+      {
+        "date": "2026-01-27",
+        "cost": 3.1036806499999994
+      },
+      {
+        "date": "2026-01-28",
+        "cost": 3.616432749999999
+      },
+      {
+        "date": "2026-01-29",
+        "cost": 3.788692249999999
+      },
+      {
+        "date": "2026-02-02",
+        "cost": 3.826717649999999
+      },
+      {
+        "date": "2026-02-03",
+        "cost": 4.199209499999999
+      },
+      {
+        "date": "2026-02-04",
+        "cost": 5.012951849999999
+      },
+      {
+        "date": "2026-02-05",
+        "cost": 7.658021899999998
+      },
+      {
+        "date": "2026-02-09",
+        "cost": 8.706802349999998
+      },
+      {
+        "date": "2026-02-10",
+        "cost": 8.988850449999997
+      },
+      {
+        "date": "2026-02-11",
+        "cost": 14.161834349999996
+      },
+      {
+        "date": "2026-02-12",
+        "cost": 21.45944725
+      },
+      {
+        "date": "2026-02-17",
+        "cost": 22.030087
+      },
+      {
+        "date": "2026-02-18",
+        "cost": 29.10774535000001
+      },
+      {
+        "date": "2026-02-19",
+        "cost": 32.81730215000001
+      },
+      {
+        "date": "2026-02-23",
+        "cost": 37.52062715000002
+      },
+      {
+        "date": "2026-02-24",
+        "cost": 52.42818315000002
+      },
+      {
+        "date": "2026-02-25",
+        "cost": 59.04375845000001
+      },
+      {
+        "date": "2026-02-26",
+        "cost": 69.52738530000002
+      },
+      {
+        "date": "2026-03-02",
+        "cost": 70.51643995000002
+      },
+      {
+        "date": "2026-03-03",
+        "cost": 82.51442170000003
+      },
+      {
+        "date": "2026-03-04",
+        "cost": 84.39635410000002
+      },
+      {
+        "date": "2026-03-05",
+        "cost": 89.58204050000003
+      },
+      {
+        "date": "2026-03-09",
+        "cost": 97.79611245000004
+      },
+      {
+        "date": "2026-03-10",
+        "cost": 99.93855540000004
+      },
+      {
+        "date": "2026-03-11",
+        "cost": 101.16167890000004
+      },
+      {
+        "date": "2026-03-12",
+        "cost": 105.86160515000005
+      },
+      {
+        "date": "2026-03-13",
+        "cost": 105.90623630000005
+      },
+      {
+        "date": "2026-03-16",
+        "cost": 107.84375435000004
+      },
+      {
+        "date": "2026-03-17",
+        "cost": 108.26895470000004
+      }
+    ],
+    "daily_messages": [
+      {
+        "date": "2026-02-11",
+        "messages": 436,
+        "sessions": 436
+      },
+      {
+        "date": "2026-03-05",
+        "messages": 358,
+        "sessions": 358
+      },
+      {
+        "date": "2026-03-04",
+        "messages": 138,
+        "sessions": 138
+      },
+      {
+        "date": "2026-03-12",
+        "messages": 232,
+        "sessions": 232
+      },
+      {
+        "date": "2026-03-11",
+        "messages": 105,
+        "sessions": 105
+      },
+      {
+        "date": "2026-03-10",
+        "messages": 125,
+        "sessions": 125
+      },
+      {
+        "date": "2026-03-13",
+        "messages": 7,
+        "sessions": 7
+      },
+      {
+        "date": "2026-03-03",
+        "messages": 440,
+        "sessions": 440
+      },
+      {
+        "date": "2026-02-25",
+        "messages": 548,
+        "sessions": 548
+      },
+      {
+        "date": "2026-02-24",
+        "messages": 1037,
+        "sessions": 1037
+      },
+      {
+        "date": "2026-02-26",
+        "messages": 622,
+        "sessions": 622
+      },
+      {
+        "date": "2026-01-14",
+        "messages": 43,
+        "sessions": 43
+      },
+      {
+        "date": "2026-01-15",
+        "messages": 7,
+        "sessions": 7
+      },
+      {
+        "date": "2026-02-12",
+        "messages": 411,
+        "sessions": 411
+      },
+      {
+        "date": "2026-01-12",
+        "messages": 43,
+        "sessions": 43
+      },
+      {
+        "date": "2026-02-03",
+        "messages": 34,
+        "sessions": 34
+      },
+      {
+        "date": "2026-03-09",
+        "messages": 502,
+        "sessions": 502
+      },
+      {
+        "date": "2026-02-10",
+        "messages": 24,
+        "sessions": 24
+      },
+      {
+        "date": "2026-01-29",
+        "messages": 17,
+        "sessions": 17
+      },
+      {
+        "date": "2026-01-28",
+        "messages": 68,
+        "sessions": 68
+      },
+      {
+        "date": "2026-02-23",
+        "messages": 349,
+        "sessions": 349
+      },
+      {
+        "date": "2026-02-18",
+        "messages": 407,
+        "sessions": 407
+      },
+      {
+        "date": "2026-01-21",
+        "messages": 18,
+        "sessions": 18
+      },
+      {
+        "date": "2026-01-19",
+        "messages": 8,
+        "sessions": 8
+      },
+      {
+        "date": "2026-02-05",
+        "messages": 143,
+        "sessions": 143
+      },
+      {
+        "date": "2026-02-04",
+        "messages": 103,
+        "sessions": 103
+      },
+      {
+        "date": "2026-01-22",
+        "messages": 11,
+        "sessions": 11
+      },
+      {
+        "date": "2026-02-17",
+        "messages": 59,
+        "sessions": 59
+      },
+      {
+        "date": "2026-03-17",
+        "messages": 35,
+        "sessions": 35
+      },
+      {
+        "date": "2026-02-19",
+        "messages": 196,
+        "sessions": 196
+      },
+      {
+        "date": "2026-03-02",
+        "messages": 63,
+        "sessions": 63
+      },
+      {
+        "date": "2026-02-02",
+        "messages": 2,
+        "sessions": 2
+      },
+      {
+        "date": "2026-01-27",
+        "messages": 21,
+        "sessions": 21
+      },
+      {
+        "date": "2026-02-09",
+        "messages": 109,
+        "sessions": 109
+      },
+      {
+        "date": "2026-03-16",
+        "messages": 142,
+        "sessions": 142
+      }
+    ],
+    "hourly_distribution": [
+      {
+        "hour": 12,
+        "messages": 83
+      },
+      {
+        "hour": 13,
+        "messages": 105
+      },
+      {
+        "hour": 14,
+        "messages": 31
+      },
+      {
+        "hour": 10,
+        "messages": 231
+      },
+      {
+        "hour": 11,
+        "messages": 72
+      },
+      {
+        "hour": 11,
+        "messages": 37
+      },
+      {
+        "hour": 13,
+        "messages": 17
+      },
+      {
+        "hour": 10,
+        "messages": 64
+      },
+      {
+        "hour": 11,
+        "messages": 27
+      },
+      {
+        "hour": 12,
+        "messages": 80
+      },
+      {
+        "hour": 20,
+        "messages": 115
+      },
+      {
+        "hour": 9,
+        "messages": 42
+      },
+      {
+        "hour": 10,
+        "messages": 46
+      },
+      {
+        "hour": 17,
+        "messages": 21
+      },
+      {
+        "hour": 18,
+        "messages": 56
+      },
+      {
+        "hour": 19,
+        "messages": 11
+      },
+      {
+        "hour": 20,
+        "messages": 31
+      },
+      {
+        "hour": 21,
+        "messages": 4
+      },
+      {
+        "hour": 21,
+        "messages": 37
+      },
+      {
+        "hour": 8,
+        "messages": 1
+      },
+      {
+        "hour": 12,
+        "messages": 3
+      },
+      {
+        "hour": 7,
+        "messages": 3
+      },
+      {
+        "hour": 10,
+        "messages": 77
+      },
+      {
+        "hour": 18,
+        "messages": 76
+      },
+      {
+        "hour": 14,
+        "messages": 201
+      },
+      {
+        "hour": 15,
+        "messages": 86
+      },
+      {
+        "hour": 7,
+        "messages": 30
+      },
+      {
+        "hour": 8,
+        "messages": 147
+      },
+      {
+        "hour": 14,
+        "messages": 122
+      },
+      {
+        "hour": 13,
+        "messages": 147
+      },
+      {
+        "hour": 15,
+        "messages": 146
+      },
+      {
+        "hour": 16,
+        "messages": 135
+      },
+      {
+        "hour": 11,
+        "messages": 5
+      },
+      {
+        "hour": 18,
+        "messages": 61
+      },
+      {
+        "hour": 11,
+        "messages": 77
+      },
+      {
+        "hour": 9,
+        "messages": 180
+      },
+      {
+        "hour": 12,
+        "messages": 29
+      },
+      {
+        "hour": 22,
+        "messages": 1
+      },
+      {
+        "hour": 9,
+        "messages": 3
+      },
+      {
+        "hour": 9,
+        "messages": 22
+      },
+      {
+        "hour": 11,
+        "messages": 84
+      },
+      {
+        "hour": 10,
+        "messages": 77
+      },
+      {
+        "hour": 12,
+        "messages": 41
+      },
+      {
+        "hour": 17,
+        "messages": 43
+      },
+      {
+        "hour": 19,
+        "messages": 57
+      },
+      {
+        "hour": 14,
+        "messages": 31
+      },
+      {
+        "hour": 15,
+        "messages": 134
+      },
+      {
+        "hour": 22,
+        "messages": 6
+      },
+      {
+        "hour": 22,
+        "messages": 7
+      },
+      {
+        "hour": 14,
+        "messages": 103
+      },
+      {
+        "hour": 10,
+        "messages": 17
+      },
+      {
+        "hour": 11,
+        "messages": 57
+      },
+      {
+        "hour": 13,
+        "messages": 110
+      },
+      {
+        "hour": 12,
+        "messages": 93
+      },
+      {
+        "hour": 20,
+        "messages": 25
+      },
+      {
+        "hour": 21,
+        "messages": 3
+      },
+      {
+        "hour": 22,
+        "messages": 52
+      },
+      {
+        "hour": 9,
+        "messages": 3
+      },
+      {
+        "hour": 19,
+        "messages": 3
+      },
+      {
+        "hour": 11,
+        "messages": 12
+      },
+      {
+        "hour": 13,
+        "messages": 9
+      },
+      {
+        "hour": 12,
+        "messages": 6
+      },
+      {
+        "hour": 12,
+        "messages": 18
+      },
+      {
+        "hour": 13,
+        "messages": 15
+      },
+      {
+        "hour": 14,
+        "messages": 105
+      },
+      {
+        "hour": 15,
+        "messages": 13
+      },
+      {
+        "hour": 20,
+        "messages": 141
+      },
+      {
+        "hour": 21,
+        "messages": 77
+      },
+      {
+        "hour": 22,
+        "messages": 58
+      },
+      {
+        "hour": 21,
+        "messages": 42
+      },
+      {
+        "hour": 22,
+        "messages": 22
+      },
+      {
+        "hour": 23,
+        "messages": 1
+      },
+      {
+        "hour": 9,
+        "messages": 2
+      },
+      {
+        "hour": 22,
+        "messages": 8
+      },
+      {
+        "hour": 23,
+        "messages": 9
+      },
+      {
+        "hour": 20,
+        "messages": 5
+      },
+      {
+        "hour": 18,
+        "messages": 5
+      },
+      {
+        "hour": 9,
+        "messages": 107
+      },
+      {
+        "hour": 12,
+        "messages": 5
+      },
+      {
+        "hour": 12,
+        "messages": 142
+      },
+      {
+        "hour": 11,
+        "messages": 16
+      },
+      {
+        "hour": 13,
+        "messages": 23
+      },
+      {
+        "hour": 14,
+        "messages": 32
+      },
+      {
+        "hour": 9,
+        "messages": 5
+      },
+      {
+        "hour": 11,
+        "messages": 8
+      },
+      {
+        "hour": 10,
+        "messages": 9
+      },
+      {
+        "hour": 15,
+        "messages": 1
+      },
+      {
+        "hour": 9,
+        "messages": 1
+      },
+      {
+        "hour": 13,
+        "messages": 48
+      },
+      {
+        "hour": 17,
+        "messages": 7
+      },
+      {
+        "hour": 15,
+        "messages": 13
+      },
+      {
+        "hour": 13,
+        "messages": 122
+      },
+      {
+        "hour": 12,
+        "messages": 113
+      },
+      {
+        "hour": 10,
+        "messages": 66
+      },
+      {
+        "hour": 11,
+        "messages": 49
+      },
+      {
+        "hour": 9,
+        "messages": 33
+      },
+      {
+        "hour": 10,
+        "messages": 34
+      },
+      {
+        "hour": 11,
+        "messages": 85
+      },
+      {
+        "hour": 12,
+        "messages": 11
+      },
+      {
+        "hour": 11,
+        "messages": 1
+      },
+      {
+        "hour": 12,
+        "messages": 48
+      },
+      {
+        "hour": 13,
+        "messages": 14
+      },
+      {
+        "hour": 19,
+        "messages": 34
+      },
+      {
+        "hour": 16,
+        "messages": 14
+      },
+      {
+        "hour": 12,
+        "messages": 34
+      },
+      {
+        "hour": 11,
+        "messages": 17
+      },
+      {
+        "hour": 16,
+        "messages": 6
+      },
+      {
+        "hour": 10,
+        "messages": 22
+      },
+      {
+        "hour": 8,
+        "messages": 3
+      },
+      {
+        "hour": 9,
+        "messages": 8
+      },
+      {
+        "hour": 14,
+        "messages": 4
+      },
+      {
+        "hour": 20,
+        "messages": 9
+      },
+      {
+        "hour": 9,
+        "messages": 7
+      },
+      {
+        "hour": 14,
+        "messages": 19
+      },
+      {
+        "hour": 11,
+        "messages": 38
+      },
+      {
+        "hour": 12,
+        "messages": 39
+      },
+      {
+        "hour": 15,
+        "messages": 2
+      },
+      {
+        "hour": 21,
+        "messages": 216
+      },
+      {
+        "hour": 9,
+        "messages": 77
+      },
+      {
+        "hour": 22,
+        "messages": 83
+      },
+      {
+        "hour": 20,
+        "messages": 43
+      },
+      {
+        "hour": 8,
+        "messages": 20
+      },
+      {
+        "hour": 11,
+        "messages": 1
+      },
+      {
+        "hour": 10,
+        "messages": 1
+      },
+      {
+        "hour": 9,
+        "messages": 4
+      },
+      {
+        "hour": 10,
+        "messages": 16
+      },
+      {
+        "hour": 15,
+        "messages": 15
+      },
+      {
+        "hour": 13,
+        "messages": 25
+      },
+      {
+        "hour": 14,
+        "messages": 15
+      },
+      {
+        "hour": 15,
+        "messages": 16
+      },
+      {
+        "hour": 21,
+        "messages": 56
+      },
+      {
+        "hour": 15,
+        "messages": 67
+      },
+      {
+        "hour": 20,
+        "messages": 51
+      },
+      {
+        "hour": 15,
+        "messages": 71
+      },
+      {
+        "hour": 9,
+        "messages": 34
+      },
+      {
+        "hour": 10,
+        "messages": 46
+      },
+      {
+        "hour": 11,
+        "messages": 31
+      },
+      {
+        "hour": 14,
+        "messages": 3
+      },
+      {
+        "hour": 16,
+        "messages": 15
+      },
+      {
+        "hour": 14,
+        "messages": 22
+      },
+      {
+        "hour": 15,
+        "messages": 30
+      },
+      {
+        "hour": 20,
+        "messages": 11
+      },
+      {
+        "hour": 16,
+        "messages": 1
+      },
+      {
+        "hour": 9,
+        "messages": 1
+      },
+      {
+        "hour": 13,
+        "messages": 1
+      },
+      {
+        "hour": 12,
+        "messages": 14
+      },
+      {
+        "hour": 14,
+        "messages": 21
+      },
+      {
+        "hour": 21,
+        "messages": 36
+      },
+      {
+        "hour": 20,
+        "messages": 8
+      },
+      {
+        "hour": 11,
+        "messages": 25
+      },
+      {
+        "hour": 12,
+        "messages": 30
+      },
+      {
+        "hour": 18,
+        "messages": 8
+      },
+      {
+        "hour": 19,
+        "messages": 9
+      },
+      {
+        "hour": 13,
+        "messages": 1
+      },
+      {
+        "hour": 20,
+        "messages": 48
+      },
+      {
+        "hour": 19,
+        "messages": 34
+      },
+      {
+        "hour": 21,
+        "messages": 2
+      },
+      {
+        "hour": 14,
+        "messages": 37
+      },
+      {
+        "hour": 21,
+        "messages": 34
+      },
+      {
+        "hour": 14,
+        "messages": 16
+      },
+      {
+        "hour": 20,
+        "messages": 3
+      },
+      {
+        "hour": 12,
+        "messages": 20
+      },
+      {
+        "hour": 10,
+        "messages": 31
+      },
+      {
+        "hour": 10,
+        "messages": 6
+      },
+      {
+        "hour": 11,
+        "messages": 24
+      },
+      {
+        "hour": 14,
+        "messages": 17
+      },
+      {
+        "hour": 9,
+        "messages": 21
+      },
+      {
+        "hour": 15,
+        "messages": 11
+      },
+      {
+        "hour": 20,
+        "messages": 25
+      },
+      {
+        "hour": 11,
+        "messages": 5
+      }
+    ],
+    "weekday_distribution": [
+      {
+        "day": "Mon",
+        "messages": 0
+      },
+      {
+        "day": "Tue",
+        "messages": 0
+      },
+      {
+        "day": "Wed",
+        "messages": 0
+      },
+      {
+        "day": "Thu",
+        "messages": 0
+      },
+      {
+        "day": "Fri",
+        "messages": 0
+      },
+      {
+        "day": "Sat",
+        "messages": 0
+      },
+      {
+        "day": "Sun",
+        "messages": 0
+      }
+    ],
+    "models": [
+      "claude-haiku-4-5-20251001",
+      "<synthetic>",
+      "claude-sonnet-4-6",
+      "claude-sonnet-4-5-20250929"
+    ],
+    "model_summary": [
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "cost": 9.031650749999999,
+        "input_tokens": 6056,
+        "output_tokens": 4768,
+        "cache_read_tokens": 59056110,
+        "cache_write_tokens": 2476915,
+        "calls": 730
+      },
+      {
+        "model": "<synthetic>",
+        "cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "calls": 3
+      },
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "cost": 0.16605689999999998,
+        "input_tokens": 192,
+        "output_tokens": 66,
+        "cache_read_tokens": 963899,
+        "cache_write_tokens": 55316,
+        "calls": 23
+      },
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "cost": 2.9658517499999992,
+        "input_tokens": 1674,
+        "output_tokens": 456,
+        "cache_read_tokens": 15408090,
+        "cache_write_tokens": 1136871,
+        "calls": 195
+      },
+      {
+        "model": "<synthetic>",
+        "cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "calls": 1
+      },
+      {
+        "model": "claude-sonnet-4-6",
+        "cost": 0.8780378999999999,
+        "input_tokens": 24,
+        "output_tokens": 5441,
+        "cache_read_tokens": 836403,
+        "cache_write_tokens": 145448,
+        "calls": 22
+      },
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "cost": 1.6581240999999998,
+        "input_tokens": 908,
+        "output_tokens": 274,
+        "cache_read_tokens": 10482636,
+        "cache_write_tokens": 486066,
+        "calls": 109
+      },
+      {
+        "model": "<synthetic>",
+        "cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "calls": 4
+      },
+      {
+        "model": "claude-sonnet-4-6",
+        "cost": 10.378363349999997,
+        "input_tokens": 9097,
+        "output_tokens": 37842,
+        "cache_read_tokens": 15053237,
+        "cache_write_tokens": 1404659,
+        "calls": 198
+      },
+      {
+        "model": "<synthetic>",
+        "cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "calls": 13
+      },
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "cost": 21.567970599999992,
+        "input_tokens": 27002,
+        "output_tokens": 9272,
+        "cache_read_tokens": 143147011,
+        "cache_write_tokens": 5743926,
+        "calls": 1617
+      },
+      {
+        "model": "claude-sonnet-4-5-20250929",
+        "cost": 0.006609,
+        "input_tokens": 873,
+        "output_tokens": 266,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "calls": 1
+      },
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "cost": 0.20883860000000004,
+        "input_tokens": 13133,
+        "output_tokens": 3225,
+        "cache_read_tokens": 336006,
+        "cache_write_tokens": 116784,
+        "calls": 13
+      },
+      {
+        "model": "claude-haiku-4-5-20251001",
+        "cost": 56.12941465000022,
+        "input_tokens": 168217,
+        "output_tokens": 37535,
+        "cache_read_tokens": 291485939,
+        "cache_write_tokens": 21299943,
+        "calls": 3764
+      },
+      {
+        "model": "claude-sonnet-4-5-20250929",
+        "cost": 5.2780371,
+        "input_tokens": 24982,
+        "output_tokens": 13777,
+        "cache_read_tokens": 5573287,
+        "cache_write_tokens": 886520,
+        "calls": 158
+      },
+      {
+        "model": "<synthetic>",
+        "cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "calls": 12
+      }
+    ],
+    "cost_by_token_type": {
+      "input": 0.756474,
+      "output": 1.69383,
+      "cache_read": 162.7027854,
+      "cache_write": 126.57168
+    },
+    "projects": [
+      {
+        "name": "-Users-Hannah-Redmond-Documents-Code-Projects-saleshub",
+        "sessions": 3934,
+        "messages": 0,
+        "cost": 61.40745175000023,
+        "input_tokens": 193199,
+        "output_tokens": 51312,
+        "cache_read_tokens": 297059226,
+        "cache_write_tokens": 22186463,
+        "file_size_mb": 0
+      },
+      {
+        "name": "-Users-Hannah-Redmond-Documents-Code-Projects-personal-vscode-extensions-ai-usage-cost-vscode-extension",
+        "sessions": 1829,
+        "messages": 0,
+        "cost": 31.95294294999999,
+        "input_tokens": 36972,
+        "output_tokens": 47380,
+        "cache_read_tokens": 158200248,
+        "cache_write_tokens": 7148585,
+        "file_size_mb": 0
+      },
+      {
+        "name": "-Users-Hannah-Redmond-Documents-Code-Projects-internal-toolkit-saleshub",
+        "sessions": 733,
+        "messages": 0,
+        "cost": 9.031650749999999,
+        "input_tokens": 6056,
+        "output_tokens": 4768,
+        "cache_read_tokens": 59056110,
+        "cache_write_tokens": 2476915,
+        "file_size_mb": 0
+      },
+      {
+        "name": "-Users-Hannah-Redmond-Documents-Code-Projects-internal-toolkit-saleshub-vscode-extension-auth0-token-generator",
+        "sessions": 196,
+        "messages": 0,
+        "cost": 2.9658517499999992,
+        "input_tokens": 1674,
+        "output_tokens": 456,
+        "cache_read_tokens": 15408090,
+        "cache_write_tokens": 1136871,
+        "file_size_mb": 0
+      },
+      {
+        "name": "-Users-Hannah-Redmond-Documents-Code-Projects-internal-toolkit-saleshub-vscode-extension-claude-code-ai-tracker",
+        "sessions": 135,
+        "messages": 0,
+        "cost": 2.5361620000000014,
+        "input_tokens": 932,
+        "output_tokens": 5715,
+        "cache_read_tokens": 11319039,
+        "cache_write_tokens": 631514,
+        "file_size_mb": 0
+      },
+      {
+        "name": "-Users-Hannah-Redmond-Documents-Code-Projects-personal-vscode-extensions-visual-regression-testing-extension",
+        "sessions": 13,
+        "messages": 0,
+        "cost": 0.20883860000000004,
+        "input_tokens": 13133,
+        "output_tokens": 3225,
+        "cache_read_tokens": 336006,
+        "cache_write_tokens": 116784,
+        "file_size_mb": 0
+      },
+      {
+        "name": "-Users-Hannah-Redmond-Documents-Code-Projects-internal-toolkit-saleshub-reports",
+        "sessions": 23,
+        "messages": 0,
+        "cost": 0.16605689999999998,
+        "input_tokens": 192,
+        "output_tokens": 66,
+        "cache_read_tokens": 963899,
+        "cache_write_tokens": 55316,
+        "file_size_mb": 0
+      }
+    ],
+    "sessions": [],
+    "tool_summary": [
+      {
+        "name": "Edit",
+        "usageCount": 485,
+        "lastUsedAt": 1772118174540
+      },
+      {
+        "name": "Read",
+        "usageCount": 445,
+        "lastUsedAt": 1772460236923
+      },
+      {
+        "name": "Bash",
+        "usageCount": 429,
+        "lastUsedAt": 1772118613631
+      },
+      {
+        "name": "Grep",
+        "usageCount": 70,
+        "lastUsedAt": 1772115591647
+      },
+      {
+        "name": "Write",
+        "usageCount": 36,
+        "lastUsedAt": 1772114149607
+      },
+      {
+        "name": "Glob",
+        "usageCount": 20,
+        "lastUsedAt": 1772111542405
+      },
+      {
+        "name": "TodoWrite",
+        "usageCount": 18,
+        "lastUsedAt": 1772106664201
+      },
+      {
+        "name": "Task",
+        "usageCount": 6,
+        "lastUsedAt": 1772104946204
+      },
+      {
+        "name": "TaskOutput",
+        "usageCount": 6,
+        "lastUsedAt": 1772116298456
+      },
+      {
+        "name": "EnterPlanMode",
+        "usageCount": 4,
+        "lastUsedAt": 1772104843989
+      },
+      {
+        "name": "AskUserQuestion",
+        "usageCount": 4,
+        "lastUsedAt": 1772105002347
+      },
+      {
+        "name": "ExitPlanMode",
+        "usageCount": 4,
+        "lastUsedAt": 1772105464549
+      },
+      {
+        "name": "Skill",
+        "usageCount": 4,
+        "lastUsedAt": 1772111527026
+      },
+      {
+        "name": "TaskStop",
+        "usageCount": 2,
+        "lastUsedAt": 1772115914189
+      }
+    ],
+    "insights": {
+      "plugins": {},
+      "todos": {},
+      "file_history": {},
+      "storage": {},
+      "plans": []
+    }
+  }
+}

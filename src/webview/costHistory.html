@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost History</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            padding: 20px;
+            color: #e0e0e0;
+            background-color: #1e1e1e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #252526;
+            border: 1px solid #3e3e42;
+        }
+
+        thead {
+            background-color: #2d2d30;
+            border-bottom: 1px solid #3e3e42;
+        }
+
+        th {
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            color: #ccc;
+            border-right: 1px solid #3e3e42;
+        }
+
+        th:last-child {
+            border-right: none;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-right: 1px solid #3e3e42;
+            border-bottom: 1px solid #3e3e42;
+            font-size: 13px;
+        }
+
+        td:last-child {
+            border-right: none;
+        }
+
+        tbody tr:hover {
+            background-color: #2d2d30;
+        }
+
+        .date-cell {
+            color: #b4b4b4;
+            font-weight: 500;
+        }
+
+        .cost-cell {
+            color: #ce9178;
+            font-weight: 500;
+        }
+
+        .tokens-cell {
+            color: #9cdcfe;
+        }
+
+        .chart-cell {
+            padding: 8px 16px;
+            position: relative;
+        }
+
+        .chart-bar {
+            height: 24px;
+            background: linear-gradient(90deg, #007acc, #005a9e);
+            border-radius: 3px;
+            min-width: 2px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-right: 8px;
+            justify-content: flex-end;
+            transition: background-color 0.2s ease;
+        }
+
+        .chart-bar:hover {
+            background: linear-gradient(90deg, #0098ff, #0078d4);
+        }
+
+        .chart-bar-label {
+            font-size: 11px;
+            color: #fff;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            white-space: nowrap;
+            margin-right: 4px;
+        }
+
+        .chart-bar:hover .chart-bar-label {
+            opacity: 1;
+        }
+
+        .chart-bar.small .chart-bar-label {
+            display: none;
+        }
+
+        .summary {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #252526;
+            border: 1px solid #3e3e42;
+            border-radius: 4px;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .summary-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .summary-label {
+            color: #ccc;
+        }
+
+        .summary-value {
+            color: #ce9178;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cost History</h1>
+        <table id="costTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Cost ($)</th>
+                    <th>Tokens</th>
+                    <th>Chart</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+
+        <div class="summary" id="summary">
+            <div class="summary-row">
+                <span class="summary-label">Total Cost:</span>
+                <span class="summary-value" id="totalCost">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span class="summary-label">Total Tokens:</span>
+                <span class="summary-value" id="totalTokens">0</span>
+            </div>
+            <div class="summary-row">
+                <span class="summary-label">Average Cost per Entry:</span>
+                <span class="summary-value" id="avgCost">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span class="summary-label">Number of Entries:</span>
+                <span class="summary-value" id="numEntries">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data - replace with dynamic data from extension
+        const sampleData = [
+            { date: '23/02/2026', cost: 17.16, tokens: 15036 },
+            { date: '18/02/2026', cost: 22.87, tokens: 20033 },
+            { date: '17/02/2026', cost: 0.03, tokens: 84 },
+            { date: '17/02/2026', cost: 4.79, tokens: 4198 },
+            { date: '12/02/2026', cost: 0.84, tokens: 732 },
+            { date: '11/02/2026', cost: 23.26, tokens: 20381 },
+            { date: '10/02/2026', cost: 10.57, tokens: 9257 },
+            { date: '05/02/2026', cost: 6.63, tokens: 16901 },
+            { date: '05/02/2026', cost: 19.86, tokens: 17397 },
+            { date: '04/02/2026', cost: 13.43, tokens: 11768 },
+            { date: '03/02/2026', cost: 2.91, tokens: 2553 },
+            { date: '02/02/2026', cost: 9.87, tokens: 8651 },
+            { date: '29/01/2026', cost: 9.83, tokens: 8610 },
+        ];
+
+        function renderTable(data) {
+            const tableBody = document.getElementById('tableBody');
+            const maxCost = Math.max(...data.map(d => d.cost));
+
+            tableBody.innerHTML = '';
+
+            data.forEach(row => {
+                const tr = document.createElement('tr');
+                const barWidthPercent = (row.cost / maxCost) * 100;
+                const isSmall = barWidthPercent < 15;
+
+                tr.innerHTML = `
+                    <td class="date-cell">${row.date}</td>
+                    <td class="cost-cell">$${row.cost.toFixed(2)}</td>
+                    <td class="tokens-cell">${row.tokens.toLocaleString()}</td>
+                    <td class="chart-cell">
+                        <div class="chart-bar ${isSmall ? 'small' : ''}" style="width: ${barWidthPercent}%">
+                            <span class="chart-bar-label">${row.cost.toFixed(2)}</span>
+                        </div>
+                    </td>
+                `;
+
+                tableBody.appendChild(tr);
+            });
+
+            updateSummary(data);
+        }
+
+        function updateSummary(data) {
+            const totalCost = data.reduce((sum, d) => sum + d.cost, 0);
+            const totalTokens = data.reduce((sum, d) => sum + d.tokens, 0);
+            const avgCost = data.length > 0 ? totalCost / data.length : 0;
+
+            document.getElementById('totalCost').textContent = `$${totalCost.toFixed(2)}`;
+            document.getElementById('totalTokens').textContent = totalTokens.toLocaleString();
+            document.getElementById('avgCost').textContent = `$${avgCost.toFixed(2)}`;
+            document.getElementById('numEntries').textContent = data.length;
+        }
+
+        // Render on load
+        renderTable(sampleData);
+
+        // Listen for messages from VSCode extension
+        window.addEventListener('message', event => {
+            const message = event.data;
+            if (message.type === 'costData') {
+                renderTable(message.data);
+            }
+        });
+    </script>
+</body>
+</html>

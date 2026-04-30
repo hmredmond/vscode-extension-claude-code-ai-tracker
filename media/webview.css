@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--vscode-sideBar-background);
+  color: var(--vscode-foreground);
+  font-family: var(--vscode-font-family);
+  font-size: 13px;
+  padding: 12px;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 12px 0 8px 0;
+  border-bottom: 1px solid var(--vscode-panel-border);
+  padding-bottom: 4px;
+}
+
+h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 10px 0 6px 0;
+}
+
+/* Buttons */
+button {
+  background: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  border: none;
+  border-radius: 2px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: var(--vscode-font-family);
+  display: inline-block;
+  margin: 4px 4px 4px 0;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+/* Link-style buttons */
+.link-button {
+  background: none;
+  color: var(--vscode-textLink-foreground);
+  text-decoration: none;
+  border: none;
+  padding: 4px 0;
+  cursor: pointer;
+  font-size: 12px;
+  display: block;
+  margin: 6px 0;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+/* Project/Branch info */
+.project-info {
+  background: var(--vscode-editor-background);
+  padding: 8px;
+  border-radius: 3px;
+  border-left: 3px solid var(--vscode-textLink-foreground);
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+
+.project-info-label {
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.project-info-value {
+  font-weight: 600;
+  margin-top: 2px;
+  word-break: break-all;
+}
+
+/* Cost display */
+.cost-display {
+  background: var(--vscode-editor-background);
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  border-left: 3px solid var(--vscode-charts-green);
+}
+
+.cost-value {
+  color: var(--vscode-charts-green);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.cost-detail {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* Summary section */
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--vscode-panel-border);
+  font-size: 12px;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.summary-label {
+  opacity: 0.8;
+}
+
+.summary-value {
+  font-weight: 600;
+  color: var(--vscode-charts-green);
+}
+
+/* Progress bars for model breakdown */
+.model-bar {
+  margin: 8px 0;
+  padding: 6px 0;
+}
+
+.model-name {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-percentage {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.bar-container {
+  width: 100%;
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  display: block;
+  height: 100%;
+  width: var(--bar-width, 0%);
+  background: #007acc;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 11px;
+  border: 1px solid var(--vscode-panel-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+thead {
+  background: var(--vscode-editor-background);
+  border-bottom: 2px solid var(--vscode-panel-border);
+}
+
+th {
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--vscode-foreground);
+  font-size: 12px;
+}
+
+td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--vscode-panel-border);
+}
+
+tbody tr {
+  border-left: 4px solid transparent;
+  transition: all 0.15s ease;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--vscode-panel-border);
+  margin-bottom: 12px;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: var(--vscode-foreground);
+  padding: 8px 12px;
+  cursor: pointer;
+  opacity: 0.6;
+  border-bottom: 2px solid transparent;
+  font-size: 12px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.tab-button:hover {
+  opacity: 0.8;
+}
+
+.tab-button.active {
+  opacity: 1;
+  color: var(--vscode-textLink-foreground);
+  border-bottom-color: var(--vscode-textLink-foreground);
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 20px 10px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+/* Loading state */
+.loading {
+  opacity: 0.6;
+}
+
+/* Error message */
+.error-message {
+  background: var(--vscode-errorForeground);
+  color: var(--vscode-editor-background);
+  padding: 8px;
+  border-radius: 3px;
+  margin: 8px 0;
+  font-size: 11px;
+}
+
+/* Info message */
+.info-message {
+  background: var(--vscode-notifications-background);
+  color: var(--vscode-foreground);
+  padding: 8px;
+  border-radius: 3px;
+  margin: 8px 0;
+  font-size: 11px;
+  border-left: 3px solid var(--vscode-notificationCenter-border);
+}
+
+/* Scrollable container */
+.scrollable {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 300px) {
+  body {
+    padding: 8px;
+  }
+
+  button {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .cost-value {
+    font-size: 14px;
+  }
+}
+
+/* Daily and weekly table rows - default styling */
+#daily table tbody tr {
+  border-left-color: rgba(120, 180, 120, 0.4);
+}
+
+#weekly table tbody tr {
+  border-left-color: rgba(120, 180, 120, 0.4);
+}
+
+/* Daily alert rows - red highlight */
+#daily table tbody tr.alert-row {
+  background: rgba(217, 83, 79, 0.12) !important;
+  border-left-color: #d9534f !important;
+}
+
+#daily table tbody tr.alert-row:hover {
+  background: rgba(217, 83, 79, 0.18) !important;
+}
+
+/* Weekly alert rows - orange highlight */
+#weekly table tbody tr.weekly-alert-row {
+  background: rgba(240, 173, 78, 0.12) !important;
+  border-left-color: #f0ad4e !important;
+}
+
+#weekly table tbody tr.weekly-alert-row:hover {
+  background: rgba(240, 173, 78, 0.18) !important;
+}
+
+/* Green left border for non-alert daily/weekly rows */
+.breakdown-item:not(.alert) {
+  border-left-color: #28a745;
+}
+
+/* Enhanced Project Cards */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.project-card {
+  background: var(--vscode-editor-background);
+  border: 1px solid var(--vscode-panel-border);
+  border-radius: 6px;
+  padding: 12px;
+  transition: all 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--vscode-textLink-foreground);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.project-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--vscode-foreground);
+  word-break: break-all;
+  flex: 1;
+}
+
+.project-total-cost {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--vscode-charts-green);
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.project-bar-container {
+  margin: 10px 0;
+}
+
+.project-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  margin: 10px 0;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.metric-label {
+  font-size: 10px;
+  color: var(--vscode-descriptionForeground);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.metric-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--vscode-foreground);
+}
+
+.project-active-branch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.branch-label {
+  color: var(--vscode-descriptionForeground);
+  font-weight: 500;
+}
+
+.branch-name {
+  flex: 1;
+  color: var(--vscode-textLink-foreground);
+  font-family: monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.branch-cost {
+  font-weight: 600;
+  color: var(--vscode-charts-green);
+  white-space: nowrap;
+}
+

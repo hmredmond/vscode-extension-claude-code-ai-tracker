@@ -1,0 +1,248 @@
+{
+  "name": "vscode-extension-claude-code-ai-tracker",
+  "displayName": "Claude Code AI cost / usage tracker",
+  "description": "Capture and track Claude Code AI usage costs across projects and branches. Access the data easily in VSCode sidebar.",
+  "version": "0.15.0",
+  "icon": "assets/avatar.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hmredmond/vscode-extension-claude-code-ai-tracker"
+  },
+  "bugs": {
+    "url": "https://github.com/hmredmond/vscode-extension-claude-code-ai-tracker/issues"
+  },
+  "homepage": "https://github.com/hmredmond/vscode-extension-claude-code-ai-tracker#readme",
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "aiUsageCost",
+          "title": "Claude Code AI usage tracker",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "aiUsageCost": [
+        {
+          "type": "webview",
+          "id": "aiUsageCost.sidebar",
+          "name": "Cost Overview",
+          "icon": "media/icon.svg"
+        },
+        {
+          "id": "aiUsageCost.reports",
+          "name": "Reports"
+        },
+        {
+          "id": "aiUsageCost.configSettings",
+          "name": "Configuration"
+        },
+        {
+          "type": "webview",
+          "id": "aiUsageCost.impactSidebar",
+          "name": "Impact Analysis",
+          "when": "config.aiUsageCost.showInsightsAnalysis"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "aiUsageCost.captureNow",
+        "title": "Claude Code: Capture Cost Now"
+      },
+      {
+        "command": "aiUsageCost.showHistory",
+        "title": "Claude Code: Show Cost History"
+      },
+      {
+        "command": "aiUsageCost.importHistorical",
+        "title": "Claude Code: Import Historical Data from Cache"
+      },
+      {
+        "command": "aiUsageCost.openDashboard",
+        "title": "Claude Code: Open Dashboard"
+      },
+      {
+        "command": "aiUsageCost.openCharts",
+        "title": "Claude Code: Open Charts"
+      },
+      {
+        "command": "aiUsageCost.openReportDashboard",
+        "title": "Claude Code: Open Report Dashboard"
+      },
+      {
+        "command": "aiUsageCost.clearAllData",
+        "title": "Claude Code: Clear All Data"
+      },
+      {
+        "command": "aiUsageCost.printReportToConsole",
+        "title": "Claude Code: Print Report to Console"
+      },
+      {
+        "command": "aiUsageCost.editDailyAlertThreshold",
+        "title": "Claude Code: Edit Daily Alert Threshold"
+      },
+      {
+        "command": "aiUsageCost.editWeeklyAlertThreshold",
+        "title": "Claude Code: Edit Weekly Alert Threshold"
+      },
+      {
+        "command": "aiUsageCost.refreshCosts",
+        "title": "Claude Code: Refresh Data",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "aiUsageCost.openImpactDashboard",
+        "title": "Claude Code: Open Impact Dashboard"
+      },
+      {
+        "command": "aiUsageCost.editInsightsHourlyRate",
+        "title": "Claude Code: Edit Developer Hourly Rate"
+      },
+      {
+        "command": "aiUsageCost.editInsightsHoursPerWeek",
+        "title": "Claude Code: Edit Developer Hours Per Week"
+      },
+      {
+        "command": "aiUsageCost.editBillingType",
+        "title": "Claude Code: Set Billing Type"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "aiUsageCost.refreshCosts",
+          "when": "view == aiUsageCost.sidebar",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Claude Code AI usage tracker",
+      "properties": {
+        "aiUsageCost.claudePath": {
+          "type": "string",
+          "default": "claude",
+          "description": "Path to the Claude Code CLI binary"
+        },
+        "aiUsageCost.statsCachePath": {
+          "type": "string",
+          "default": "~/.claude/stats-cache.json",
+          "description": "Path to Claude Code stats-cache.json file for importing historical data. Use ~ for home directory."
+        },
+        "aiUsageCost.weekStartDay": {
+          "type": "string",
+          "default": "monday",
+          "enum": [
+            "sunday",
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday"
+          ],
+          "description": "First day of the week for weekly breakdown view"
+        },
+        "aiUsageCost.dailyAlertThreshold": {
+          "type": "number",
+          "default": 10,
+          "minimum": 0,
+          "description": "Daily cost alert threshold in dollars. Set to 0 to disable alerts. Example: 10 will alert when daily cost exceeds $10."
+        },
+        "aiUsageCost.weeklyAlertThreshold": {
+          "type": "number",
+          "default": 50,
+          "minimum": 0,
+          "description": "Weekly cost alert threshold in dollars. Set to 0 to disable alerts. Example: 50 will alert when weekly cost exceeds $50."
+        },
+        "aiUsageCost.pollIntervalMinutes": {
+          "type": "number",
+          "default": 5,
+          "minimum": 1,
+          "description": "Interval in minutes to automatically poll and refresh cost data. Set to 0 to disable auto-polling."
+        },
+        "aiUsageCost.showInsightsAnalysis": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable the Impact Analysis panel. Shows time saved, success rates, and ROI metrics generated from the /insights slash command in Claude Code. Data is read from ~/.claude/usage-data/facets/."
+        },
+        "aiUsageCost.developerHourlyRate": {
+          "type": "number",
+          "default": 50,
+          "minimum": 0,
+          "description": "Developer hourly rate in your local currency, used to calculate estimated developer value saved in the Impact Analysis panel."
+        },
+        "aiUsageCost.developerHoursPerWeek": {
+          "type": "number",
+          "default": 40,
+          "minimum": 1,
+          "description": "Contracted developer hours per week, used to calculate % time saved in the Impact Analysis panel."
+        },
+        "aiUsageCost.billingType": {
+          "type": "string",
+          "default": "api",
+          "enum": [
+            "api",
+            "max"
+          ],
+          "enumDescriptions": [
+            "Pay-per-token API billing: costs are calculated at standard Anthropic rates.",
+            "Claude Max subscription: cost figures shown are API-rate estimates only — not what you are actually charged."
+          ],
+          "description": "Your Claude Code billing type. Controls how cost figures are labelled throughout the extension."
+        },
+        "aiUsageCost.customModelPricing": {
+          "type": "object",
+          "default": {},
+          "description": "Override pricing for specific models (USD per 1M tokens). Keys are model name substrings (e.g. \"haiku\", \"sonnet\", \"claude-opus-4-6\"). Each value must be an object with any of: inputPerMillion, outputPerMillion, cacheReadPerMillion, cacheWritePerMillion. Example: { \"haiku\": { \"inputPerMillion\": 0.8, \"outputPerMillion\": 4 } }"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npx esbuild src/extension.ts --bundle --platform=node --target=node18 --external:vscode --outfile=out/extension.js --sourcemap --minify",
+    "compile": "npx esbuild src/extension.ts --bundle --platform=node --target=node18 --external:vscode --outfile=out/extension.js --sourcemap --minify",
+    "watch": "npx esbuild src/extension.ts --bundle --platform=node --target=node18 --external:vscode --outfile=out/extension.js --sourcemap --watch",
+    "package": "vsce package",
+    "build-install": "npm run compile && rm -rf install/*.vsix && npm run package && cp *.vsix install/ && rm -rf *.vsix",
+    "report": "node generate-report.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "vsce": "^2.15.0",
+    "esbuild": "^0.19.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.3.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "claude code",
+    "vscode",
+    "extension",
+    "analysis",
+    "cost analysis"
+  ]
+}

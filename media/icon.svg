@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+  <!-- Dollar sign with chart bars -->
+  <path d="M8 1c-3.87 0-7 3.13-7 7s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7zm0 12.5c-3.04 0-5.5-2.46-5.5-5.5S4.96 2.5 8 2.5s5.5 2.46 5.5 5.5-2.46 5.5-5.5 5.5z"/>
+  <!-- Dollar sign -->
+  <path d="M7.5 4.5c-.28 0-.5.22-.5.5v.5H6c-.28 0-.5.22-.5.5s.22.5.5.5h.5v2H6c-.28 0-.5.22-.5.5s.22.5.5.5h.5v.5c0 .28.22.5.5.5s.5-.22.5-.5v-.5h1v.5c0 .28.22.5.5.5s.5-.22.5-.5v-.5h.5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-.5v-2h.5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-.5V5c0-.28-.22-.5-.5-.5z"/>
+  <!-- Simple bars representation -->
+  <rect x="9" y="10" width="1" height="2" opacity="0.8"/>
+  <rect x="11" y="8" width="1" height="4" opacity="0.8"/>
+</svg>
