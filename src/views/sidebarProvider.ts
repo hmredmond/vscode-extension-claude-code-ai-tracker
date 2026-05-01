@@ -1003,32 +1003,50 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
     /* ===== Configuration Needed State ===== */
     #configNeeded {
       display: none;
-      padding: 24px 12px;
+      padding: 24px 16px;
       text-align: center;
-      min-height: 200px;
+      min-height: 300px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 16px;
+      gap: 12px;
     }
     #configNeeded.active {
       display: flex;
     }
 
     .config-icon {
-      font-size: 48px;
-      opacity: 0.6;
+      font-size: 56px;
+      opacity: 0.7;
+      margin-bottom: 8px;
+    }
+
+    .config-title {
+      font-size: 15px;
+      font-weight: 600;
+      opacity: 0.9;
     }
 
     .config-message {
-      font-size: 13px;
-      opacity: 0.8;
+      font-size: 12px;
+      opacity: 0.7;
+      line-height: 1.6;
+      max-width: 260px;
+    }
+
+    .config-warning {
+      background: rgba(255, 191, 0, 0.1);
+      border: 1px solid rgba(255, 191, 0, 0.3);
+      border-radius: 4px;
+      padding: 10px 12px;
+      font-size: 11px;
       line-height: 1.5;
-      max-width: 280px;
+      max-width: 260px;
+      text-align: left;
     }
 
     .config-button {
-      padding: 8px 16px;
+      padding: 8px 20px;
       background: var(--vscode-button-background, #007acc);
       color: var(--vscode-button-foreground, #fff);
       border: none;
@@ -1037,6 +1055,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
       font-size: 13px;
       font-weight: 500;
       transition: background 0.2s ease;
+      margin-top: 4px;
     }
     .config-button:hover {
       background: var(--vscode-button-hoverBackground, #005a9e);
@@ -1046,10 +1065,15 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 <body>
   <div id="configNeeded">
     <div class="config-icon">⚙️</div>
+    <div class="config-title">Setup Required</div>
     <div class="config-message">
-      No Claude configuration file selected. You need to point the extension at your local claude.json file to see usage data.
+      You must set the path to your Claude configuration file before any usage data can be displayed.
     </div>
-    <button class="config-button" id="configureBtn">Configure claude.json</button>
+    <div class="config-warning">
+      <strong>Why am I seeing this?</strong><br>
+      The extension needs to know where your <code>claude.json</code> file is located to track and display AI usage costs.
+    </div>
+    <button class="config-button" id="configureBtn">Select claude.json File</button>
   </div>
 
   <div id="loadingIndicator">
