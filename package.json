@@ -3,7 +3,7 @@
   "displayName": "Claude Code AI cost / usage tracker",
   "description": "Capture and track Claude Code AI usage costs across projects and branches. Access the data easily in VSCode sidebar.",
   "publisher": "CodeMaman",
-  "version": "0.16.0",
+  "version": "0.17.1",
   "icon": "assets/avatar.png",
   "repository": {
     "type": "git",
@@ -140,6 +140,11 @@
           "type": "string",
           "default": "claude",
           "description": "Path to the Claude Code CLI binary"
+        },
+        "aiUsageCost.claudeJsonPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to your local claude.json configuration file. Leave empty to use default ~/.claude/claude.json"
         },
         "aiUsageCost.statsCachePath": {
           "type": "string",

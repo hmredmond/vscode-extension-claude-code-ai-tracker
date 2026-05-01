@@ -376,6 +376,9 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
         case "printReportToConsole":
           await this.printReportToConsole();
           break;
+        case "configureClaudeJson":
+          await this.configureClaudeJsonPath();
+          break;
       }
     });
 
@@ -401,6 +404,45 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
       this.configChangeListener?.dispose();
       this.configChangeListener = undefined;
     });
+  }
+
+  private async configureClaudeJsonPath(): Promise<void> {
+    const config = vscode.workspace.getConfiguration("aiUsageCost");
+    const current = config.get<string>("claudeJsonPath", "");
+
+    // Show file picker
+    const uris = await vscode.window.showOpenDialog({
+      title: "Select claude.json configuration file",
+      defaultUri: vscode.Uri.file(
+        current || require("node:os").homedir() + "/.claude/claude.json",
+      ),
+      filters: {
+        "JSON Files": ["json"],
+      },
+      canSelectFiles: true,
+      canSelectFolders: false,
+      canSelectMany: false,
+    });
+
+    if (uris && uris.length > 0) {
+      const selectedPath = uris[0].fsPath;
+      await config.update(
+        "claudeJsonPath",
+        selectedPath,
+        vscode.ConfigurationTarget.Global,
+      );
+      vscode.window.showInformationMessage(
+        `Claude JSON path set to: ${selectedPath}`,
+      );
+      // Refresh the sidebar
+      await this.refresh();
+    }
+  }
+
+  private isClaudeJsonConfigured(): boolean {
+    const config = vscode.workspace.getConfiguration("aiUsageCost");
+    const path = config.get<string>("claudeJsonPath", "");
+    return path !== "";
   }
 
   async refresh(
@@ -604,6 +646,17 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
     project?: string,
     branch?: string,
   ): Promise<void> {
+    // Check if claude.json is configured
+    if (!this.isClaudeJsonConfigured()) {
+      const targetWebview = webview || this.currentWebview;
+      if (targetWebview) {
+        targetWebview.postMessage({
+          command: "showConfigurationNeeded",
+        });
+      }
+      return;
+    }
+
     // Get current workspace folder if not provided
     const workspaceFolder = vscode.workspace.workspaceFolders?.[0];
 
@@ -946,9 +999,59 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
       font-size: 13px;
       opacity: 0.7;
     }
+
+    /* ===== Configuration Needed State ===== */
+    #configNeeded {
+      display: none;
+      padding: 24px 12px;
+      text-align: center;
+      min-height: 200px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+    #configNeeded.active {
+      display: flex;
+    }
+
+    .config-icon {
+      font-size: 48px;
+      opacity: 0.6;
+    }
+
+    .config-message {
+      font-size: 13px;
+      opacity: 0.8;
+      line-height: 1.5;
+      max-width: 280px;
+    }
+
+    .config-button {
+      padding: 8px 16px;
+      background: var(--vscode-button-background, #007acc);
+      color: var(--vscode-button-foreground, #fff);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+    .config-button:hover {
+      background: var(--vscode-button-hoverBackground, #005a9e);
+    }
   </style>
 </head>
 <body>
+  <div id="configNeeded">
+    <div class="config-icon">⚙️</div>
+    <div class="config-message">
+      No Claude configuration file selected. You need to point the extension at your local claude.json file to see usage data.
+    </div>
+    <button class="config-button" id="configureBtn">Configure claude.json</button>
+  </div>
+
   <div id="loadingIndicator">
     <div class="spinner"></div>
     <div class="loading-text">Loading data...</div>
@@ -1009,15 +1112,27 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
     // Handle updates from extension
     window.addEventListener('message', (event) => {
       const message = event.data;
+      
+      const configNeeded = document.getElementById('configNeeded');
+      const loadingIndicator = document.getElementById('loadingIndicator');
+      const sidebarContent = document.getElementById('sidebar-content');
+      
+      if (message.command === 'showConfigurationNeeded') {
+        // Show configuration needed UI
+        if (configNeeded) configNeeded.classList.add('active');
+        if (loadingIndicator) loadingIndicator.classList.remove('active');
+        if (sidebarContent) sidebarContent.classList.add('hidden');
+        return;
+      }
+      
       if (message.command === 'updateData') {
-        const loadingIndicator = document.getElementById('loadingIndicator');
-        const sidebarContent = document.getElementById('sidebar-content');
         const hasData = typeof message.allTimeCost === 'number';
         
         if (message.loading === true) {
           // Start data loading - set a timeout to show loading indicator if it's slow
           if (loadingTimeout) clearTimeout(loadingTimeout);
           loadingTimeout = setTimeout(() => {
+            if (configNeeded) configNeeded.classList.remove('active');
             if (loadingIndicator) loadingIndicator.classList.add('active');
             if (sidebarContent) sidebarContent.classList.add('hidden');
           }, LOADING_DELAY);
@@ -1027,6 +1142,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
         // Data arrived - hide loading state
         if (hasData) {
           if (loadingTimeout) clearTimeout(loadingTimeout);
+          if (configNeeded) configNeeded.classList.remove('active');
           if (loadingIndicator) loadingIndicator.classList.remove('active');
           if (sidebarContent) sidebarContent.classList.remove('hidden');
         }
@@ -1213,6 +1329,14 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
         }
       }
     });
+
+    // Configure button click handler
+    const configureBtn = document.getElementById('configureBtn');
+    if (configureBtn) {
+      configureBtn.addEventListener('click', () => {
+        vscode.postMessage({ command: 'configureClaudeJson' });
+      });
+    }
 
     // Request initial data
     vscode.postMessage({ command: 'refresh' });
